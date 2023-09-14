@@ -1,1 +1,3 @@
 # learning_nest
+
+Experiments from the Udemy's course [Understanding Typescript](https://www.udemy.com/course/understanding-typescript/)
