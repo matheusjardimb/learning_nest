@@ -1,3 +1,3 @@
 # learning_nest
 
-Experiments from the Udemy's course [Understanding Typescript](https://www.udemy.com/course/understanding-typescript/)
+Experiments from the Udemy's course [Master NestJS 9](https://www.udemy.com/course/master-nestjs-the-javascript-nodejs-framework/)
