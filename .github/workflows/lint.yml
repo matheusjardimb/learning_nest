@@ -21,6 +21,7 @@ jobs:
       - uses: actions/setup-node@v3.8.1
         with:
           node-version-file: '.nvmrc'
-      - run: cd backend
-      - run: npm i
-      - run: npm run lint
+      - run: |
+          cd backend
+          npm i
+          npm run lint
