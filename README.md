@@ -13,3 +13,4 @@ npm run serve
 ## Resources
 
 - https://github.com/piotr-jura-udemy/master-nest-js
+- https://docs.nestjs.com/cli/overview
