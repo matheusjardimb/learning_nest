@@ -8,4 +8,4 @@ import { EventsController } from './events.controller';
   controllers: [AppController, EventsController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}
