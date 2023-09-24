@@ -15,11 +15,11 @@ import { EventsController } from './events.controller';
       password: 'example',
       database: 'nest-events',
       entities: [Event],
-      synchronize: true
+      synchronize: true,
     }),
-    TypeOrmModule.forFeature([Event])
+    TypeOrmModule.forFeature([Event]),
   ],
   controllers: [AppController, EventsController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}
