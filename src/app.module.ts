@@ -17,21 +17,26 @@ import { EventsModule } from './events/events.module';
       password: 'example',
       database: 'nest-events',
       entities: [Event],
-      synchronize: true
+      synchronize: true,
     }),
-    EventsModule
+    EventsModule,
   ],
   controllers: [AppController],
-  providers: [{
-    provide: AppService,
-    useClass: AppJapanService
-  }, {
-    provide: 'APP_NAME',
-    useValue: 'Nest Events Backend!'
-  }, {
-    provide: 'MESSAGE',
-    inject: [AppDummy],
-    useFactory: (app) => `${app.dummy()} Factory!`
-  }, AppDummy],
+  providers: [
+    {
+      provide: AppService,
+      useClass: AppJapanService,
+    },
+    {
+      provide: 'APP_NAME',
+      useValue: 'Nest Events Backend!',
+    },
+    {
+      provide: 'MESSAGE',
+      inject: [AppDummy],
+      useFactory: (app) => `${app.dummy()} Factory!`,
+    },
+    AppDummy,
+  ],
 })
-export class AppModule { }
+export class AppModule {}
