@@ -1,5 +1,4 @@
 import { Expose } from 'class-transformer';
-import { Attendee } from 'src/events/attendee.entity';
 import {
   Column,
   Entity,
@@ -8,6 +7,7 @@ import {
   OneToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
+import { Attendee } from './../events/attendee.entity';
 import { Event } from './../events/event.entity';
 import { Profile } from './profile.entity';
 
