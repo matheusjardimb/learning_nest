@@ -16,12 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3.6.0
 
-      - run: cd backend
-
       - uses: actions/setup-node@v3.8.1
         with:
           node-version-file: '.nvmrc'
       - run: |
-          cd backend
           npm i
           npm run lint
