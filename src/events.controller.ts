@@ -26,6 +26,7 @@ export class EventsController {
     return await this.repository.find();
   }
 
+
   @Get('/practice')
   async practice() {
     return await this.repository.find({
@@ -56,6 +57,7 @@ export class EventsController {
     return await this.repository.save({
       ...input,
       when: new Date(input.when),
+
     });
   }
 
@@ -66,14 +68,17 @@ export class EventsController {
     return await this.repository.save({
       ...event,
       ...input,
+
       when: input.when ? new Date(input.when) : event.when,
     });
   }
 
   @Delete(':id')
   @HttpCode(204)
+
   async remove(@Param('id') id) {
     const event = await this.repository.findOne(id);
     await this.repository.remove(event);
+
   }
 }
